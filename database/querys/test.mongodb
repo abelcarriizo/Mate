@@ -1,0 +1,25 @@
+//connection to database
+use('mate')
+
+//encontrar todos los atributos sin el id
+//db.products.find({}, {_id: 0}).sort()
+
+//imprimir todos los productos
+//db.products.find().forEach(product => print('Nombre: ' + product.name))
+
+//agregar un atributo a la coleccion
+//db.products.update({name: 'monitor'}, {$set: {price: 99.99}}, {upsert: true})
+
+//actualizar un atributo de la coleccion
+//db.products.update({name: 'monitor'}, {$set: {price: 99.99}}
+
+db.posts.insertOne(
+  {
+  "author": "",
+  "content": "Contenido de la publicación",
+  "image": "ruta/a/imagen.jpg",
+  "likes": [],
+  "created_at": new Date(),
+  "comments": ""
+  }
+)
