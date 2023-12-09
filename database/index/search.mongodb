@@ -1,0 +1,4 @@
+use('mate')
+
+//Ver indices creados
+db.users.getIndexes()

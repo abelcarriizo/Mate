@@ -1,0 +1,4 @@
+use('mate')
+
+//Busqueda común en redes sociales
+db.users.createIndex({"user_name": 1})

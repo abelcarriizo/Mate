@@ -1,0 +1,3 @@
+use('mate')
+
+db.users.dropIndex('user_name_1')
