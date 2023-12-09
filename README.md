@@ -234,7 +234,7 @@ db.posts.aggregate([
 
 ### USUARIOS
 Publicaciones realizadas por un usuario:
-```json
+```javascript
 db.users.aggregate([
   {
     $match: {
@@ -271,7 +271,7 @@ db.users.aggregate([
 ```
 
 Comentarios realizados por el usuario a otras publicaciones:
-```json
+```javascript
 db.posts.aggregate([
   {
     $unwind: "$comments"
