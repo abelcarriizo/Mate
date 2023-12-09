@@ -1,0 +1,5 @@
+use('mate')
+
+db.posts.find({
+    "author": ObjectId('653d33198da962044fa2349c')
+  }).explain("executionStats").executionStats
