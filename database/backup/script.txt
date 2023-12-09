@@ -1,0 +1,8 @@
+# Backup completo de la base de datos
+sudo mongodump --db mate --out /home/abel/Documentos/ #Tu Directorio
+
+# Backup basico de la base de datos
+sudo mongo export --db mate -c users --out /home/abel/Documentos/
+
+mongorestore -> para backup realizado en mongodump
+mongoimport  -> para backup realizado en mongoexport
