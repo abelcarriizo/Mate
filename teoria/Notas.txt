@@ -1,0 +1,26 @@
+## ¿Qué es el cloud computing?
+
+El cloud computing basicamente es la prestacion de un servicio de recursos informaticos virtualizados
+para ser utilizados bajo demanda.
+
+## Virtualizacion? Capacidad de multiples sistemas se utilizen bajo una misma maquina.
+
+## GIS? Sistema de Informacion Geografico. Es una base de datos que almacena datos relacionados del mundo real
+que estan vinculados a una referencia espacial.
+
+¿Que datos se almacenan?
+
+- Imagenes Ruster: La representacion de Informacion se almacena en una matriz de pixeles (celdas), cada pixel 
+contiene informacion sobre una ubicacion especifica y puede representar valores numericos.
+
+En otras palabras...
+Son como fotos divididas en pequeñas cuadriculas de colores. Cada cuadro (píxel) tiene información sobre 
+un lugar en el mapa, pero todos los cuadros son iguales en tamaño. 
+
+- Datos Vectoriales: La información geoespacial se representa mediante objetos geométricos precisos, 
+como puntos, líneas y polígonos.
+
+En otras palabras...
+Son como dibujos precisos en los que cada cosa (una carretera, un edificio, una frontera, etc.) se describe 
+con puntos, líneas y formas.
+
