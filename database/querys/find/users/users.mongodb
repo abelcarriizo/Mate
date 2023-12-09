@@ -1,0 +1,35 @@
+use('mate')
+
+db.users.aggregate([
+  {
+    $match: {
+      _id: ObjectId("653d33198da962044fa2337a")
+    }
+  },
+  {
+    $lookup: {
+      from: "followers",
+      let: { userId: "$_id" },
+      pipeline: [
+        {
+          $match: {
+            $expr: { $eq: ["$user_id", "$$userId"] }
+          }
+        },
+        {
+          $count: "followersCount"
+        }
+      ],
+      as: "seguidores"
+    }
+  },
+  {
+    $project: {
+      _id: 0, // Excluye el campo "_id" del resultado
+      user_name: 1,
+      name: 1,
+      followersCount: { $arrayElemAt: ["$seguidores.followersCount", 0] },
+      profile_picture: 1
+    }
+  }
+])

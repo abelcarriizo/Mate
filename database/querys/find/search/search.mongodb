@@ -1,0 +1,6 @@
+use('mate')
+
+db.users.find({
+  "user_name": "abelcarrizo"
+})
+  

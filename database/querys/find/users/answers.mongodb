@@ -1,0 +1,38 @@
+use('mate')
+
+db.posts.aggregate([
+  {
+    $unwind: "$comments"
+  },
+  {
+    $match: {
+      "comments.author": ObjectId("653d33198da962044fa236ec")
+    }
+  },
+  {
+    $lookup: {
+      from: "users",
+      localField: "comments.author",
+      foreignField: "_id",
+      as: "commenter_info"
+    }
+  },
+  {
+    $unwind: "$commenter_info"
+  },
+  {
+    $project: {
+      _id: 1,
+      author_name: "$commenter_info.user_name",
+      author_profile_picture: "$commenter_info.profile_picture",
+      content: "$comments.content", // El contenido del comentario
+      created_at: "$comments.created_at", // La fecha de publicación del comentario
+      likesCount: { $size: "$comments.likes" }, // Los "likes" del comentario
+      answersCount: { $size: "$comments.answers" }, // La cantidad de comentarios del comentario
+      parent_post: "$_id" // Esto indica que es una respuesta a una publicación de otro usuario
+    }
+  },
+  {
+    $sort: { created_at: -1 } // Ordena las respuestas por fecha de publicación, de más reciente a más antigua
+  }
+])

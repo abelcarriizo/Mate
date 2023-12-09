@@ -1,0 +1,13 @@
+use('mate')
+
+db.users.update(
+  { _id: ObjectId("653d33198da962044fa2337a") },
+  {
+    $set: {
+      name: "Adrienne Choake",
+      user_name: "achoake",
+      email: "achoake@gmail.com",
+      profile_picture: "nueva/ruta/de/imagen.jpg",
+    }
+  }
+)

@@ -1,0 +1,8 @@
+use('mate')
+
+//Verificar si existe el usuario para iniciar sesion
+db.users.findOne(
+  {
+    "user_name": "achoake0",
+    "password": "aT5$/EBv"
+  })

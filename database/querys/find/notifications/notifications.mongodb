@@ -1,0 +1,30 @@
+use('mate')
+
+db.notifications.aggregate([
+  {
+    $match: {
+      user_id: ObjectId("653d33198da962044fa23b0a"),
+      read: false
+    }
+  },
+  {
+    $lookup: {
+      from: "users",
+      localField: "sender_id",
+      foreignField: "_id",
+      as: "sender"
+    }
+  },
+  {
+    $unwind: "$sender"
+  },
+  {
+    $project: {
+      _id: 0, // Excluye el campo "_id" del resultado
+      user_name: "$sender.user_name", // Nombre de usuario del emisor
+      profile_picture: "$sender.profile_picture", // Foto de perfil del emisor
+      type: 1, // Tipo de notificación
+      message: 1 // Mensaje de la notificación
+    }
+  }
+])

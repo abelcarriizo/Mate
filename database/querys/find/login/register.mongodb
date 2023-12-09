@@ -1,0 +1,11 @@
+use('mate')
+
+//Registro de Usuarios
+db.users.insertOne({
+  "name": "Abel Carrizo",
+  "user_name": "abelcarrizo",
+  "email": "acarrizo@email.com",
+  "password": "abel123",
+  "profile_picture": "ruta/a/imagen.jpg",
+  "created_at": new Date()
+})

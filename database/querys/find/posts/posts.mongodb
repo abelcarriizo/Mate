@@ -1,0 +1,35 @@
+use('mate')
+
+//Obtener las publicaciones segun su autor
+db.posts.aggregate([
+  {
+    $match: { //Busca los usuarios en funcion de algun criterio
+      author: ObjectId("653d33198da962044fa2337d")
+    }
+  },
+  {
+    $lookup: { //Union de dos documentos
+      from: "users",
+      localField: "author",
+      foreignField: "_id",
+      as: "author_info"
+    }
+  },
+  {
+    $unwind: "$author_info" //Divide un campo de matriz en varios documentos
+  },
+  {
+    $project: { //Forma en la que se presentara la coleccion
+      _id: 1,
+      author_name: "$author_info.user_name",
+      author_profile_picture: "$author_info.profile_picture",
+      content: 1,
+      created_at: 1,
+      likesCount: { $size: "$likes" },
+      commentsCount: { $size: "$comments" }
+    }
+  },
+  {
+    $sort: { created_at: -1 } // Ordenar por fecha de publicación, en este caso, de más reciente a más antigua
+  },
+])
