@@ -1,0 +1,9 @@
+{
+  "_id": "ObjectId",
+  "user_id": "ObjectId", 
+  "sender_id": "ObjectId",
+  "type": "nuevo_seguidor",
+  "read": false,
+  "message": "John Doe te ha seguido",
+  "created_at": "ISODate('2023-10-26T21:30:00Z')"
+}

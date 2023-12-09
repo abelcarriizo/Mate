@@ -1,0 +1,52 @@
+{
+  "_id": "ObjectId",
+  "author": "ObjectId",
+  "content": "Contenido de la publicación",
+  "image": "ruta/a/imagen.jpg",
+  "likes": ["user_id_1", "user_id_2"],
+  "created_at": "ISODate('2023-10-26T21:30:00Z')",
+  "updated_at": "ISODate('2023-10-26T21:30:00Z')",
+  "comments": [ 
+    {
+      "_id": "ObjectId",
+      "author": "ObjectId",
+      "content": "Comentario 1",
+      "image": "ruta/a/imagen.jpg",
+      "likes": ["user_id_1", "user_id_2"],
+      "created_at": "ISODate('2023-10-26T21:30:00Z')",
+      "updated_at": "ISODate('2023-10-26T21:30:00Z')",
+      "answers": [
+        {
+        "_id": "ObjectId",
+        "author": "ObjectId",
+        "content": "Comentario 1",
+        "image": "ruta/a/imagen.jpg",
+        "likes": ["user_id_1", "user_id_2"],
+        "created_at": "ISODate('2023-10-26T21:30:00Z')",
+        "updated_at": "ISODate('2023-10-26T21:30:00Z')"
+        },
+        {
+          "_id": "ObjectId",
+          "author": "ObjectId",
+          "content": "Comentario 1",
+          "image": "ruta/a/imagen.jpg",
+          "likes": ["user_id_1", "user_id_2"],
+          "created_at": "ISODate('2023-10-26T21:30:00Z')",
+          "updated_at": "ISODate('2023-10-26T21:30:00Z')"
+        }
+      ]
+    },
+    {
+      "_id": "ObjectId",
+      "author": "ObjectId",
+      "content": "Comentario 2",
+      "image": "",
+      "likes": [],
+      "created_at": "ISODate('2023-10-26T21:30:00Z')",
+      "updated_at": "ISODate('2023-10-26T21:30:00Z')",
+      "comments": [
+        
+      ]
+    }
+  ]
+}

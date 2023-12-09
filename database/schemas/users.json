@@ -1,0 +1,9 @@
+{
+    "_id": "ObjectId",
+    "name": "nombre",
+    "user_name": "username",
+    "email": "name@email.com",
+    "password": "password",
+    "profile_picture": "ruta/a/imagen.jpg",
+    "created_at": "ISODate('2023-10-26T21:30:00Z')"
+} 
