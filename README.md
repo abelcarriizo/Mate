@@ -64,9 +64,11 @@ pip install pymongo
    ```
 
 ## 1. INTRODUCCIÓN
+
 Este documento describe el proceso de creación de la base de datos para "Mate", una red social inspirada en Threads. El proyecto tiene como objetivo proporcionar a los usuarios un espacio para compartir información y opiniones sobre temas de interés general, centrándose en la interacción con la base de datos.
 
 ## 2. DESCRIPCIÓN
+
 La base de datos de Mate está diseñada para admitir las siguientes funcionalidades:
 - **REGISTRO DE USUARIOS:** Los usuarios pueden registrarse proporcionando nombre, nombre de usuario, contraseña y correo electrónico.
 - **EDITAR PERFIL:** Los usuarios pueden actualizar su información.
@@ -77,16 +79,17 @@ La base de datos de Mate está diseñada para admitir las siguientes funcionalid
 - **RECIBIR NOTIFICACIONES:** Notificaciones sobre nuevas publicaciones, comentarios y mensajes privados.
 
 ## 3. OBJETIVOS
+
 - Crear un espacio para la libre expresión e intercambio de ideas.
 - Ofrecer una plataforma para que las personas compartan sus opiniones.
 
 ## 4. METODOLOGÍA
+
 La base de datos de Mate se desarrolló utilizando MongoDB, un sistema de gestión de bases de datos no relacionales, elegido por su escalabilidad y flexibilidad.
 
 ## 5. ESTRUCTURA DE LA BASE DE DATOS
 
 En esta sección, se presenta la estructura de las colecciones de la red social. Puedes consultar los esquemas en el [directorio database/schemas](./database/schemas). Si deseas conocer cómo se creó cada colección, puedes acceder al [directorio database/querys/create](./database/querys/create).
-
 
 ### USUARIOS
 ```json
@@ -170,11 +173,7 @@ Una publicacion tiene comentarios y estos comentarios pueden ser respondidos.
 
 A continuación, se presentan consultas sugeridas para cada vista. Además, puedes explorar algunas previsualizaciones construidas en Figma. Accede a ellas a través del [directorio /img](./img). Si deseas consultar las consultas, encontrarás los archivos en el [directorio database/querys/find/](./database/querys/find/).
 
-<div style="display: flex; justify-content: center; align-items: center;">
-  <img src="img/login_register.png" alt="Registro e Inicio de Sesion" style="margin-left: 10px; width: 300px;">
-  <img src="img/home_1.png" alt="Inicio de la aplicacion" style="margin-left: 10px; width: 300px;">
-  <img src="img/profile_1.png" alt="Perfil del usuario" style="margin-left: 10px; width: 300px;">
-</div>
+![Previsualizacion de Mate](img/preview.png)
 
 ### INICIO DE SESIÓN
 ```javascript
