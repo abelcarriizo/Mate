@@ -1,7 +1,4 @@
-<div align="center" style="margin-bottom: 20px; display: flex; align-items: center; justify-content: center;">
-  <h1 style="font-family: 'Arial', sans-serif; color: rgba(46, 204, 113, 0.8); margin-right: 30px;font-size: 3em;">MATE</h1>
-  <img src="img/icon.png" alt="Icono de la aplicación" style="width: 100px; height: 100px;">
-</div>
+![Titulo](img/title.png)
 
 ## 0. ANTES DE CONTINUAR...
 
@@ -174,11 +171,10 @@ Una publicacion tiene comentarios y estos comentarios pueden ser respondidos.
 A continuación, se presentan consultas sugeridas para cada vista. Además, puedes explorar algunas previsualizaciones construidas en Figma. Accede a ellas a través del [directorio /img](./img). Si deseas consultar las consultas, encontrarás los archivos en el [directorio database/querys/find/](./database/querys/find/).
 
 <div style="display: flex; justify-content: center; align-items: center;">
-  <img src="" alt="" style="margin-left: 10px; width: 300px;">
-  <img src="" alt="" style="margin-left: 10px; width: 300px;">
-  <img src="" alt="" style="margin-left: 10px; width: 300px;">
+  <img src="img/login_register.png" alt="Registro e Inicio de Sesion" style="margin-left: 10px; width: 300px;">
+  <img src="img/home_1.png" alt="Inicio de la aplicacion" style="margin-left: 10px; width: 300px;">
+  <img src="img/profile_1.png" alt="Perfil del usuario" style="margin-left: 10px; width: 300px;">
 </div>
-![Registro e Inicio de Sesion](img/login_register.png) ![Inicio de la aplicacion](img/home_1.png) ![Perfil del usuario](img/profile_1.png)
 
 ### INICIO DE SESIÓN
 ```javascript
