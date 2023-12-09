@@ -51,18 +51,6 @@ Antes de ejecutar el código, es fundamental instalar el módulo pymongo. Puedes
 pip install pymongo
 ```
 
-¡Claro! Aquí tienes un pequeño markdown para que puedas incluirlo en tu repositorio de GitHub:
-
-
-## Respaldo con `mongodump`
-
-1. Abre la terminal o línea de comandos.
-
-2. Utiliza el siguiente comando para realizar un respaldo de la base de datos:
-   ```bash
-   mongodump --out /ruta/al/directorio/de/respaldo
-   ```
-
 ## 1. INTRODUCCIÓN
 
 Este documento describe el proceso de creación de la base de datos para "Mate", una red social inspirada en Threads. El proyecto tiene como objetivo proporcionar a los usuarios un espacio para compartir información y opiniones sobre temas de interés general, centrándose en la interacción con la base de datos.
