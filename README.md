@@ -1,5 +1,3 @@
-![Titulo](img/title.png)
-
 ## 0. ANTES DE CONTINUAR...
 
 Antes de avanzar, es crucial entender la estructura del repositorio.
